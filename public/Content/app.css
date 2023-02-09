@@ -1,0 +1,49 @@
+/*Custom Css goes here*/
+/*
+File : Assignment 1 Portfolio
+Name : Rutvik Patel
+Student ID : 301302391
+Date : 06 Feb 2023
+*/
+
+
+/*for about page*/
+img {
+  border-radius: 50%;
+}
+
+/*for projects and service page*/
+* {
+box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+float: left;
+padding: 10px;
+height: 300px; /* Should be removed. Only for demonstration */
+
+}
+
+.left {
+width: 65%;
+
+}
+
+.right {
+width: 35%;
+}
+.left1 {
+width: 35%;
+}
+
+.right1 {
+width: 65%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
