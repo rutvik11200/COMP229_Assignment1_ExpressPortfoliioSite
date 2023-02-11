@@ -55,14 +55,14 @@ clear: both;
   opacity: 0.7;
   background-size: cover;
   position: relative;
-  background-color: #a20707;
+  background-color: #aa2424b5;
   margin-top: 10px;
 }
 
 .bgimage .jumbotron {
-  background-color: #aa2424 !important;
+  background-color: #aa2424b5 !important;
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
