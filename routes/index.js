@@ -1,12 +1,19 @@
+/*
+File : index.ejs
+Name : Rutvik Patel
+Student ID : 301302391
+Date : 06 Feb 2023
+*/
+
 var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Home' });
+  res.render('home', { title: 'Home' });
 });
 router.get('/home', function(req, res, next) {
-  res.render('index', { title: 'Home' });
+  res.render('home', { title: 'Home' });
 });
 router.get('/about', function(req, res, next) {
   res.render('about', { title: 'About' });
