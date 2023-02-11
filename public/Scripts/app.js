@@ -25,7 +25,7 @@ function move() {
 }
 function save(){
     var fullname = document.myform.fname.value;
-    var number = document.getElementById("mnum").value;
+    var number = document.getElementById("num").value;
     
     var email = document.getElementById("email").value;
     
