@@ -47,3 +47,23 @@ content: "";
 display: table;
 clear: both;
 }
+
+/* background image */
+.bgimage {
+  height: 100vh;
+  background: url('/Assets/images/Background.jpg');
+  opacity: 0.7;
+  background-size: cover;
+  position: relative;
+  background-color: #a20707;
+  margin-top: 10px;
+}
+
+.bgimage .jumbotron {
+  background-color: #aa2424 !important;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
