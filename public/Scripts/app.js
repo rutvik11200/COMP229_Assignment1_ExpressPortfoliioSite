@@ -1,8 +1,8 @@
 /*
-File : Assignment 1 Portfolio
+File : app.js
 Name : Rutvik Patel
 Student ID : 301302391
-Date : 06 Feb 2023
+Date : 07 Feb 2023
 */
 
 (function(){
@@ -25,7 +25,7 @@ function move() {
 }
 function save(){
     var fullname = document.myform.fname.value;
-    var number = document.getElementById("num").value;
+    var number = document.getElementById("mnum").value;
     
     var email = document.getElementById("email").value;
     
