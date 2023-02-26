@@ -13,6 +13,12 @@ let path = require('path');
 let cookieParser = require('cookie-parser');
 let logger = require('morgan');
 
+
+// modules for authentication
+let session = require('express-session');
+let passport = require('passport');
+let flash = require('connect-flash');
+
 let indexRouter = require('./routes/index');
 let usersRouter = require('./routes/users');
 
