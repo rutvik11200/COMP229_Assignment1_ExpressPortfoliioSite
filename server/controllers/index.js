@@ -39,7 +39,7 @@ module.exports.displayServicesPage = (req, res, next) => {
 }
 
 module.exports.displayContactPage = (req, res, next) => {
-    res.render('contact', { title: 'Contact',displayName:req.user?req.user.displayName:'' });
+    //res.render('contact', { title: 'Contact',displayName:req.user?req.user.displayName:'' });
 }
 
 module.exports.displayLoginPage = (req, res, next) => {
@@ -52,6 +52,7 @@ module.exports.displayLoginPage = (req, res, next) => {
             displayName:req.user?req.user.displayName:''
             
         })
+        res.render('contact', { title: 'Contact',displayName:req.user?req.user.displayName:'' });
     }
     else
     {
@@ -130,7 +131,7 @@ module.exports.processRegisterPage = (req, res, next) => {
         }
             
     });
-}
+};
 module.exports.performLogout = (req, res, next) => {
     req.logout(function (err) {
         if (err) {
@@ -138,4 +139,4 @@ module.exports.performLogout = (req, res, next) => {
         }
         res.redirect('/');
     });
-}
+};

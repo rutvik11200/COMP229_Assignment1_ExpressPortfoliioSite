@@ -17,16 +17,10 @@
                 <th class="text-center col-2">Name</th>
                 <th class="text-center col-2">Number</th>
                 <th class="text-center col-1">Email</th>
-                <th class="text-center col-1"></th>
-                <th class="text-center col-1"><a href="/updateList" class="btn" style="background-color: darkcyan; color: white;"><i class="fas fa-pencil-alt"></i>Update</a></th>
                 <%}else{%>
                   <th class="text-center col-2">Name</th>
                 <th class="text-center col-2">Number</th>
-                <th class="text-center col-1">Email</th>
-                
-                
-                
-
+                <th class="text-center col-1">Email</th>          
                 <%}%>
                 </tr>
                <%for(let count = 0; count < ContactList.length; count ++){%>
@@ -37,8 +31,6 @@
                         <td class="text-center col-1"><%=ContactList[count].email%></td>
                       
                     
-                        <!--td class="text-center col-1"><a href="/updateList" class="btn btn-primary"><i class="fas fa-pencil-alt"></i>Update</a></td-->
-                        <td class="text-center col-1"><a href="/contactList/delete/<%=ContactList[count]._id%>" class="btn btn-danger"><i class="fas fa-trash-alt"></i>Delete</a></td>
                         <%}else{%>
                           <td class="text-center col-2"><%=ContactList[count].name%></td>
                         <td class="text-center col-2"><%=ContactList[count].number%></td>
@@ -49,6 +41,7 @@
                       </tr>
                         <%}%>
             </table>
+            <a class="btn btn-primary" style="margin-left: 48%; margin-bottom: 10px;" role="button" href="/updateList"><i class="fas fa-pencil-alt"></i>Update</a>
         </div>
     </div>
   </main>
